@@ -1003,3 +1003,152 @@ footer,
   top: calc(50% - 14px / 2 + 2311.5px);
   position: absolute;
 }
+
+/*-----------------------------------------------------------------------------------*/
+/*	MEDIA QUERIES
+/*-----------------------------------------------------------------------------------*/
+
+@media (max-width: 768px) {
+  header {
+    padding-bottom: 50px;
+    min-height: 1000px;
+    height: 100%;
+  }
+
+  header .carousel-inner div {
+    padding-bottom: 50px;
+  }
+
+  .navbar-nav {
+    float: left;
+    text-align: left;
+  }
+}
+
+@media (max-width: 992px) {
+  .detail .carousel h1,
+  .detail p {
+    text-align: center;
+  }
+
+  .detail p {
+    margin-bottom: 60px;
+  }
+
+  header,
+  .social {
+    background-position-y: 0px;
+    background-size: 200%;
+  }
+
+  .payoff {
+    padding-top: 50px;
+    padding-bottom: 50px;
+    min-height: 200px;
+  }
+
+  .payoff h1 {
+    font-size: 24px;
+  }
+
+  .features .col-md-4 {
+    margin-bottom: 60px;
+  }
+}
+
+footer,
+.push {
+  text-align: left;
+  min-height: 90px;
+}
+
+footer,
+.made {
+  font-family: sans-serif;
+  font-size: 16px;
+  padding: 10px;
+  text-align: left;
+  min-height: 90px;
+}
+
+@media (max-width: 480px) {
+  header .carousel-inner {
+    padding-bottom: 50px;
+  }
+
+  header .carousel-inner div {
+    padding-bottom: 50px;
+    text-align: left;
+  }
+
+  header p.lead {
+    font-size: 12px;
+  }
+
+  table {
+    font-size: 12px;
+  }
+  table th {
+    width: 100px;
+    font-weight: bold;
+    vertical-align: top;
+  }
+  table td {
+    width: 150px;
+    padding: 10px;
+    vertical-align: top;
+  }
+
+  h2 {
+    font-size: 16px;
+    text-align: left;
+  }
+
+  header {
+    height: 100%;
+    width: 100%;
+    background-position: center center;
+  }
+
+  header h1 {
+    font-size: 70px;
+  }
+
+  .purchase {
+    height: 100%;
+  }
+
+  .features col-md-4 {
+    margin-bottom: 50px;
+  }
+}
+
+button {
+  display: inline-block;
+  margin-bottom: 0;
+  margin-bottom: 10px;
+  padding: 6px 12px;
+  border: 1px solid transparent;
+  border-radius: 4px;
+  border-radius: 5px;
+  vertical-align: middle;
+  text-align: center;
+  white-space: nowrap;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 1.428571429;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  -o-user-select: none;
+  user-select: none;
+}
+
+.visibility {
+  visibility: hidden;
+}
+
+.animated {
+  visibility: visible !important;
+}

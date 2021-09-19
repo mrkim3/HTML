@@ -1,6 +1,10 @@
 // toggle visibility for css3 animations 
 $(document).ready(function() {
-	$('.v15_2').css('width', $(window).width() );   
+	$('header').addClass('visibility');
+	$('.carousel-iphone').addClass('visibility');
+	$('.payoff h1').addClass('visibility');
+	$('.features .col-md-4').addClass('visibility');
+	$('.social .col-md-12').addClass('visibility');
 });
 
 
@@ -136,9 +140,28 @@ $(document).ready(function () {
 
 
 $(window).resize(function () {
-	$(window).resize(function() {        
-		$('.v15_2').css('width', $(window).width() - 50 );     
-	});
+
+	var browserWidth = $(window).width();
 	
+	if (browserWidth > 560){ 
+	
+		$(window).scroll(function() {
+			parallax();
+			navbar();
+		});
+	
+	}
+
 });	
+
+
+// iPhone Header Carousel
+$('header .carousel').carousel({
+  interval: 3000
+})
+
+// iPhone Features Carousel
+$('.detail .carousel').carousel({
+  interval: 4000
+})
 
